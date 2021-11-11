@@ -1,0 +1,351 @@
+html,
+body,
+.v-application {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.hero {
+  min-height: 600px;
+  background-size: cover;
+  background-position: top -400px center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 959px) {
+    min-height: 400px;
+    background-position: top -300px center;
+  }
+  @media screen and (max-width: 599px) {
+    min-height: 350px;
+    background-position: top -100px center;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #161d2d, $alpha: 0.8);
+  }
+  .wrap {
+    position: relative;
+    z-index: 2;
+    padding: 0 60px;
+    @media screen and (max-width: 599px) {
+      padding: 0 30px;
+    }
+    h5 {
+      color: #ed9e52;
+      font-size: 30px;
+      margin-bottom: -10px;
+      line-height: normal;
+      @media screen and (max-width: 959px) {
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 20px;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-size: 64px;
+      line-height: normal;
+      @media screen and (max-width: 959px) {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 36px;
+      }
+    }
+    h6 {
+      color: #fff;
+      font-size: 26px;
+      line-height: normal;
+      margin-top: 10px;
+      font-weight: 300;
+      margin-bottom: 0;
+      @media screen and (max-width: 959px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.title-sec {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #1d1e20;
+  font-size: 40px;
+  @media screen and (max-width: 959px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 599px) {
+    font-size: 28px;
+  }
+}
+
+.underline {
+  position: relative;
+  z-index: 2;
+  width: 90px;
+  height: 7px;
+  border-radius: 50px;
+  background-color: #475998;
+  display: inline-block;
+  margin: 30px 0;
+  @media screen and (max-width: 599px) {
+    margin: 15px 0;
+  }
+}
+
+.circle {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 0;
+    background-color: #ed9e52;
+  }
+}
+
+.narasumber {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -150px;
+    left: -100px;
+    display: block;
+    background-color: #ebebed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -150px;
+    right: -100px;
+    display: block;
+    background-color: #ebebed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  }
+  .item-narasumber {
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    @media screen and (max-width: 599px) {
+      margin-bottom: 0px;
+    }
+    h5 {
+      color: #161d2d;
+      font-size: 20px;
+      margin-top: 10px;
+      @media screen and (max-width: 959px) {
+        font-size: 16px;
+      }
+    }
+    h6 {
+      font-size: 14px;
+      font-weight: normal;
+      @media screen and (max-width: 959px) {
+        font-size: 13px;
+      }
+    }
+  }
+  &.gray {
+    background-color: #f5f5f5;
+    &::before {
+      left: -200px;
+      top: 250px;
+    }
+    &:after {
+      bottom: 150px;
+      right: -200px;
+    }
+  }
+}
+
+.tujuan {
+  padding: 60px 0;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  .v-card {
+    border: 1px solid #ededed !important;
+    box-shadow: none !important;
+    min-height: 260px;
+    @media screen and (max-width: 959px) {
+      min-height: auto;
+    }
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.8;
+      @media screen and (max-width: 959px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.latar {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  .v-card {
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      @media screen and (max-width: 959px) {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      &:last-child() {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.buku {
+  padding: 60px 0;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  h6 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #727272;
+    @media screen and (max-width: 959px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 20px;
+    }
+  }
+  h3 {
+    font-size: 60px;
+    color: #2e3c70;
+    font-weight: 900;
+    margin-bottom: 30px;
+    @media screen and (max-width: 959px) {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 28px;
+    margin: 15px 0 0 0;
+    @media screen and (max-width: 959px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      font-size: 18px;
+    }
+  }
+  .v-card {
+    background-color: #2e3c70 !important;
+    h6 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      @media screen and (max-width: 959px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 14px;
+      }
+    }
+    h4 {
+      color: #ed9e52;
+      font-size: 30px;
+      @media screen and (max-width: 959px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 20px;
+      }
+    }
+    h5 {
+      color: #939393;
+      font-size: 24px;
+      font-weight: 400;
+      @media screen and (max-width: 959px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 599px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.collab {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 200px;
+  }
+}
+
+.contact {
+  padding: 60px 0;
+  @media screen and (max-width: 959px) {
+    padding: 30px 0;
+  }
+  .title-form {
+    color: #1d1e20;
+    font-size: 24px;
+    @media screen and (max-width: 959px) {
+      font-size: 20px;
+    }
+  }
+  .v-btn {
+    height: auto !important;
+    background-color: #475998 !important;
+  }
+}
+
+.v-footer {
+  background-color: #c4c4c4 !important;
+}
+
+.v-avatar {
+  img {
+    object-fit: cover;
+  }
+}

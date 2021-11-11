@@ -1,0 +1,517 @@
+<template>
+  <div>
+    <div class="hero" style="background-image: url('/hero.jpg')">
+      <div class="wrap">
+        <h5>{{ new Date().getFullYear() }}</h5>
+        <h2>Pengusaha Pejuang,<br />Pejuang Pengusaha</h2>
+        <h6>Buku Saku Pengusaha Muda</h6>
+      </div>
+    </div>
+    <div class="narasumber">
+      <v-container>
+        <v-row>
+          <v-col cols="12" class="text-center">
+            <h4 class="title-sec">Calon Narasumber</h4>
+            <span class="underline"></span>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center">
+          <v-col
+            v-for="item in narasumbers"
+            :key="item.id"
+            md="3"
+            sm="3"
+            cols="6"
+            class="item-narasumber text-center"
+          >
+            <div class="d-inline-block circle">
+              <v-avatar size="120">
+                <img :src="item.img" />
+              </v-avatar>
+            </div>
+            <h5>{{ item.nama }}</h5>
+            <h6>{{ item.title }}</h6>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="narasumber gray">
+      <v-container>
+        <v-row>
+          <v-col cols="12" class="text-center">
+            <h4 class="title-sec">Sekapur Sirih & Topics</h4>
+            <span class="underline"></span>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center">
+          <v-col
+            v-for="item in sekapurs"
+            :key="item.id"
+            md="3"
+            sm="3"
+            cols="6"
+            class="item-narasumber text-center"
+          >
+            <div class="d-inline-block circle">
+              <v-avatar size="120">
+                <img :src="item.img" />
+              </v-avatar>
+            </div>
+            <h5>{{ item.nama }}</h5>
+            <h6>{{ item.title }}</h6>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="tujuan">
+      <v-container>
+        <v-row>
+          <v-col cols="12" class="text-center">
+            <h4 class="title-sec">Tujuan dan Manfaat</h4>
+            <span class="underline"></span>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center">
+          <v-col cols="12" md="4" class="">
+            <v-card class="py-8 px-6">
+              <p>
+                Pembuatan buku HIPMI Jaya yang timeless, kreatif, menggugah,
+                relevan,mudah dibaca dan bermanfaat bagi banyak orang
+              </p>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4" class="">
+            <v-card class="py-8 px-6">
+              <p>
+                Publikasi kepada masyarakat umum dalam hal kontribusi anggota
+                HIPMI Jaya yang substansial dalam dunia kewirausahaan di
+                Indonesia
+              </p>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4" class="">
+            <v-card class="py-8 px-6">
+              <p>
+                Menjadi panduan atau acuan utama untuk kalangan kewirausahaan
+                Jakarta khususnya anggota HIPMI Jaya, dalam pembentukan ide,
+                pemecahan masalah, pada suatu usaha dalam industri tertentu
+              </p>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="latar">
+      <v-container>
+        <v-row class="align-center">
+          <v-col cols="12" sm="3" md="4" class="text-left text-sm-right">
+            <h4 class="title-sec text-left text-sm-right pr-0 pr-md-8">
+              Latar Belakang
+            </h4>
+            <span class="underline mr-0 mr-md-8"></span>
+          </v-col>
+          <v-col cols="12" sm="9" md="8" class="">
+            <v-card class="py-8 px-6" elevation="0">
+              <p>
+                Para pengusaha muda baik early stage (pemula), maupun mature
+                stage perlu starter kit, panduan dan tools yang menguatkan untuk
+                terus bertumbuh
+              </p>
+
+              <p>
+                Para pengusaha muda perlu mengetahui cara bertansformasi menjadi
+                pengusaha yang inovasi dan karyanya menjadi dampak yang
+                menghasilkan.
+              </p>
+
+              <p>
+                Para pengusaha muda perlu mengetahui cara mengelola krisis dari
+                sisi pengusaha lain, agar memiliki keyakinan untuk tetap
+                bertahan sebagai pengusaha yang bermanfaat hingga mendapat
+                solusi dari krisisnya.
+              </p>
+
+              <p>
+                Para pengusaha muda perlu memahami bagaimana cara membangun
+                bisnis, dari sisi positif maupun dari sisi negative yang menjadi
+                jalan untuk terus menguatkan diri dalam membangun bisnis.
+              </p>
+
+              <p>
+                Para pengusaha muda perlu memahami bagaimana cara melanjutkan
+                family business agar tetap bertahan dan terus bertumbuh dari
+                sebelumnya.
+              </p>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="buku">
+      <v-container>
+        <v-row class="align-center">
+          <v-col cols="12" sm="6" md="8">
+            <span class="underline"></span>
+            <h6>Judul Buku</h6>
+            <h3>Pengusaha Pejuang, Pejuang Pengusaha</h3>
+            <h6>Tema</h6>
+            <p>
+              “ Tips Praktis untuk Pengusaha Baru dalam Memasuki Industri dengan
+              Efektif ”
+            </p>
+          </v-col>
+          <v-col cols="12" sm="6" md="4">
+            <v-card elevation="0" color="py-10 px-8">
+              <h6>Penulis</h6>
+              <h4 class="mb-5">Member HIPMI Jaya</h4>
+
+              <h6>Pelaksanaan</h6>
+              <h5>Dibuat mulai</h5>
+              <h4 class="mb-3">Oktober 2021 – Februari 2022</h4>
+              <h5>Soft Launching</h5>
+              <h4>16 Desember 2021</h4>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="collab">
+      <v-container>
+        <v-row>
+          <v-col class="text-center">
+            <h4 class="title-sec pr-8">Collaboration Partner</h4>
+            <span class="underline mr-8"></span>
+          </v-col>
+          <v-col cols="12" class="text-center">
+            <img src="partner.png" alt="" class="mr-4" />
+            <img src="LogoHIPMIJaya.png" alt="" />
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="contact">
+      <v-container>
+        <v-row class="align-center">
+          <v-col cols="12" offset="0" sm="8" offset-sm="2" md="6" offset-md="3">
+            <h5 class="title-form">Isi form untuk pemesanan buku :</h5>
+            <validation-observer ref="observer">
+              <form id="contactForm" @submit.prevent="submit">
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Nama"
+                  rules="required"
+                >
+                  <v-text-field
+                    v-model="form.name"
+                    :error-messages="errors"
+                    label="Nama"
+                    name="name"
+                    required
+                  ></v-text-field>
+                </validation-provider>
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Angkatan HIPMI"
+                  rules="required"
+                >
+                  <v-text-field
+                    v-model="form.angkatan_hipmi"
+                    :error-messages="errors"
+                    label="Angkatan HIPMI"
+                    name="Angkatan HIPMI"
+                    type="number"
+                    required
+                  ></v-text-field>
+                </validation-provider>
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Email"
+                  rules="required|email"
+                >
+                  <v-text-field
+                    v-model="form.email"
+                    :error-messages="errors"
+                    label="E-mail"
+                    name="email"
+                    required
+                  ></v-text-field>
+                </validation-provider>
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Nomor Telephone"
+                  rules="required"
+                >
+                  <v-text-field
+                    v-model="form.phone"
+                    :error-messages="errors"
+                    label="Nomor Telephone"
+                    name="Nomor Telephone"
+                    required
+                  ></v-text-field>
+                </validation-provider>
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Jumlah Eksemplar"
+                  rules="required"
+                >
+                  <v-text-field
+                    v-model="form.jumlah_eksemplar"
+                    :error-messages="errors"
+                    label="Jumlah Eksemplar yg dipesan"
+                    name="jumlah_eksemplar"
+                    type="number"
+                    required
+                  ></v-text-field>
+                </validation-provider>
+                <v-btn
+                  color="primary"
+                  class="
+                    btn btn-primary
+                    d-inline-block
+                    mt-5
+                    text-capitalize
+                    font-weight-medium
+                    py-3
+                    px-8
+                  "
+                  type="submit"
+                  elevation="0"
+                  :disabled="loading"
+                >
+                  <span>Send Form</span>
+                </v-btn>
+                <v-progress-circular
+                  v-if="loading"
+                  indeterminate
+                  color="primary"
+                  class="ml-2 mt-4"
+                ></v-progress-circular>
+              </form>
+            </validation-observer>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      loading: false,
+      form: {
+        name: null,
+        angkatan_hipmi: null,
+        email: null,
+        phone: null,
+        jumlah_eksemplar: null,
+      },
+      narasumbers: [
+        {
+          id: 6,
+          img: '/narasumber1.jpeg',
+          nama: 'Rama Datau',
+          title: 'Panasonic - Electronic/Retail/FnB',
+        },
+        {
+          id: 1,
+          img: '/narasumber2.jpeg',
+          nama: 'Afifuddin Kalla',
+          title: 'Bumi Mineral Sulawesi - Energy',
+        },
+        {
+          id: 3,
+          img: '/narasumber3.jpeg',
+          nama: 'Diatche Harahap',
+          title: 'Titik Temu - F&B Balesin.id Tech',
+        },
+        {
+          id: 4,
+          img: '/narasumber4.jpeg',
+          nama: 'David Christian',
+          title: 'Evoware - Social Enterprise / Sustainability',
+        },
+        {
+          id: 5,
+          img: '/narasumber5.jpeg',
+          nama: 'Muhammad Aghnia Syahputra',
+          title: 'LP3i Indonesia - Education',
+        },
+        {
+          id: 2,
+          img: '/narasumber6.jpeg',
+          nama: 'Yudha Permana',
+          title: 'Newman Pearsons - Property',
+        },
+        {
+          id: 9,
+          img: '/narasumber7.jpeg',
+          nama: 'Dina Albens',
+          title: 'Albens Cider - Winery',
+        },
+        {
+          id: 10,
+          img: '/narasumber8.jpeg',
+          nama: 'Harizah Persiana',
+          title: 'Sekolah Merdeka Cita - Social Entreprise / Education',
+        },
+        {
+          id: 11,
+          img: '/narasumber9.jpeg',
+          nama: 'Shinta Melodi',
+          title: 'INTMO by YIG ltd.co - Trade / Export Import',
+        },
+        {
+          id: 12,
+          img: '/narasumber10.jpeg',
+          nama: 'Anindyo Suhardono',
+          title: 'Satria Akasa Investama - Investment',
+        },
+        {
+          id: 13,
+          img: '/narasumber11.jpeg',
+          nama: 'Bona Herbert Simanjorang',
+          title: 'Juma Berlian Exim - Agriculture Export Import',
+        },
+        {
+          id: 8,
+          img: '/narasumber12.jpeg',
+          nama: 'Arif Satria Kurniagung',
+          title: 'Level Tujuh - Event',
+        },
+        {
+          id: 7,
+          img: '/narasumber13.jpeg',
+          nama: 'Sayed Muhammad',
+          title: 'USS Feed - Media',
+        },
+        {
+          id: 14,
+          img: '/narasumber14.jpeg',
+          nama: 'Melissa Hamid',
+          title: 'Abumas Group & Picknick Yuk Nona Manis - Industri & Retail',
+        },
+      ],
+      sekapurs: [
+        {
+          id: 1,
+          img: '/sekapur1.jpg',
+          nama: 'Sona Maesana',
+          title: 'on "Pengusaha Muda Jakarta"',
+        },
+        {
+          id: 2,
+          img: '/sekapur2.jpeg',
+          nama: 'Sandiaga Uno',
+          title: 'on "Tourism in Indonesia"',
+        },
+        {
+          id: 3,
+          img: '/sekapur3.jpeg',
+          nama: 'Bahlil Lahdalia',
+          title: 'on "Ease of doing Business in Indonesia"',
+        },
+        {
+          id: 4,
+          img: '/sekapur4.jpeg',
+          nama: 'Erick Tohir',
+          title: 'on "How UMKM and BUMN Collaborate in Indonesia"',
+        },
+        {
+          id: 5,
+          img: '/sekapur5.jpeg',
+          nama: 'M. Lutfi',
+          title: 'on "How to Maximize Trade in Indonesia"',
+        },
+        {
+          id: 6,
+          img: '/sekapur6.jpeg',
+          nama: 'Abdul Latief',
+          title: 'on "Founding HIPMI"',
+        },
+        {
+          id: 7,
+          img: '/sekapur7.jpeg',
+          nama: 'Mardani Maming',
+          title: 'on "Pengusaha Muda Indonesia"',
+        },
+      ],
+    }
+  },
+  head() {
+    return {
+      title: 'Pengusaha Pejuang Pejuang Pengusaha',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Tips Praktis untuk Pengusaha Baru dalam Memasuki Industri dengan Efektif',
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Pengusaha Pejuang Pejuang Pengusaha',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            'Pengusaha Pejuang Pejuang Pengusaha, pengusaha, pejuang, buku',
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content:
+            'Tips Praktis untuk Pengusaha Baru dalam Memasuki Industri dengan Efektif',
+        },
+      ],
+    }
+  },
+  mounted() {
+    // this.loading = true
+  },
+  methods: {
+    async submit() {
+      this.loading = true
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbyA6qqc0ZnuHWLa0q4Nc23gM3j2iYsBlTcHT5DH1DB8YtGiZ7O7dsriyQbRboRma6Jt/exec'
+      const sendingData = new FormData()
+      sendingData.append('name', this.form.name)
+      sendingData.append('phone', this.form.phone)
+      sendingData.append('email', this.form.email)
+      sendingData.append('angkatan_hipmi', this.form.angkatan_hipmi)
+      sendingData.append('jumlah_eksemplar', this.form.jumlah_eksemplar)
+
+      await fetch(scriptURL, { method: 'POST', body: sendingData })
+        .then(
+          () =>
+            this.$swal.fire({
+              type: 'success',
+              title: 'Message Sent!',
+              text: 'Thank you, we will contact you very soon.',
+            }),
+          this.reset()
+        )
+        .catch(() =>
+          this.$swal.fire({
+            type: 'error',
+            title: 'Oops',
+            text: 'Theres something error please try again later.',
+          })
+        )
+      this.loading = false
+    },
+    reset() {
+      this.form.name = null
+      this.form.email = null
+      this.form.angkatan_hipmi = null
+      this.form.phone = null
+      this.form.jumlah_eksemplar = null
+      this.$refs.observer.reset()
+    },
+  },
+}
+</script>
