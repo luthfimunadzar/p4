@@ -177,7 +177,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="buku">
+    <div class="buku d-none">
       <v-container>
         <v-row class="align-center">
           <v-col cols="12" sm="6" md="8">
