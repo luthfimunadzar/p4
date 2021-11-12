@@ -214,7 +214,8 @@
           </v-col>
           <v-col cols="12" class="text-center">
             <img src="partner.png" alt="" class="mr-4" />
-            <img src="LogoHIPMIJaya.png" alt="" />
+            <img src="partner2.png" alt="" class="mr-4" />
+            <img src="partner3.png" alt="" />
           </v-col>
         </v-row>
       </v-container>

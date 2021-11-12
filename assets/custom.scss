@@ -339,7 +339,15 @@ body,
   img {
     display: inline-block;
     vertical-align: middle;
-    height: 200px;
+    &:first-child {
+      width: 250px;
+    }
+    &:nth-child(2) {
+      height: 200px;
+    }
+    &:last-child {
+      width: 200px;
+    }
   }
 }
 
