@@ -392,7 +392,7 @@ export default {
           id: 11,
           img: '/narasumber9.jpeg',
           nama: 'Shinta Melodi',
-          title: 'INTMO by YIG ltd.co - Trade / Export Import',
+          title: 'INTMO by YIG ltd.co - Trade / Export & Import',
         },
         {
           id: 12,
@@ -404,7 +404,7 @@ export default {
           id: 13,
           img: '/narasumber11.jpeg',
           nama: 'Bona Herbert Simanjorang',
-          title: 'Juma Berlian Exim - Agriculture Export Import',
+          title: 'Juma Berlian Exim - Agriculture / Export & Import',
         },
         {
           id: 8,
@@ -422,7 +422,7 @@ export default {
           id: 14,
           img: '/narasumber14.jpeg',
           nama: 'Melissa Hamid',
-          title: 'Abumas Group & Picknick Yuk Nona Manis - Industri & Retail',
+          title: 'Abumas Group & Picknick Yuk Nona Manis - Industrial & Retail',
         },
       ],
       sekapurs: [

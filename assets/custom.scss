@@ -60,7 +60,7 @@ body,
       width: 100%;
     }
     h5 {
-      color: #ed9e52;
+      color: #faa24b;
       font-size: 30px;
       margin-bottom: -10px;
       line-height: normal;
@@ -117,7 +117,7 @@ body,
   width: 90px;
   height: 7px;
   border-radius: 50px;
-  background-color: #475998;
+  background-color: #2a4597;
   display: inline-block;
   margin: 30px 0;
   @media screen and (max-width: 599px) {
@@ -137,7 +137,7 @@ body,
     z-index: 1;
     top: 5px;
     left: 0;
-    background-color: #ed9e52;
+    background-color: #faa24b;
   }
 }
 
@@ -180,7 +180,7 @@ body,
       margin-bottom: 0px;
     }
     h5 {
-      color: #161d2d;
+      color: #2a4597;
       font-size: 20px;
       margin-top: 10px;
       font-weight: 700;
@@ -197,7 +197,7 @@ body,
     }
   }
   &.gray {
-    background-color: #f5f5f5;
+    background-color: #d1d3d4;
     &::before {
       left: -200px;
       top: 250px;
@@ -256,7 +256,7 @@ body,
 
 .latar {
   padding: 60px 0;
-  background-color: #f5f5f5;
+  background-color: #d1d3d4;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
@@ -333,7 +333,7 @@ body,
       }
     }
     h4 {
-      color: #ed9e52;
+      color: #faa24b;
       font-size: 30px;
       @media screen and (max-width: 959px) {
         font-size: 24px;
@@ -378,7 +378,7 @@ body,
 
 .contact {
   padding: 60px 0;
-  background-color: #f5f5f5;
+  background-color: #d1d3d4;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
