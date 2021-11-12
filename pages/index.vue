@@ -4,20 +4,23 @@
       <div class="wrap">
         <h5>{{ new Date().getFullYear() }}</h5>
         <h2>Pengusaha Pejuang,<br />Pejuang Pengusaha</h2>
-        <h6>Buku Saku Pengusaha Muda</h6>
+        <h6>
+          A Lexicon of Entrepreneurial Stories, Curated by HIPMI Jaya x Manual
+          Jakarta
+        </h6>
       </div>
     </div>
     <div class="narasumber">
       <v-container>
         <v-row>
           <v-col cols="12" class="text-center">
-            <h4 class="title-sec">Calon Narasumber</h4>
+            <h4 class="title-sec">Forewords By</h4>
             <span class="underline"></span>
           </v-col>
         </v-row>
         <v-row class="justify-center">
           <v-col
-            v-for="item in narasumbers"
+            v-for="item in sekapurs"
             :key="item.id"
             md="3"
             sm="3"
@@ -39,13 +42,13 @@
       <v-container>
         <v-row>
           <v-col cols="12" class="text-center">
-            <h4 class="title-sec">Sekapur Sirih & Topics</h4>
+            <h4 class="title-sec">Inspiring Stories by</h4>
             <span class="underline"></span>
           </v-col>
         </v-row>
         <v-row class="justify-center">
           <v-col
-            v-for="item in sekapurs"
+            v-for="item in narasumbers"
             :key="item.id"
             md="3"
             sm="3"
@@ -104,39 +107,66 @@
     <div class="latar">
       <v-container>
         <v-row class="align-center">
-          <v-col cols="12" sm="3" md="4" class="text-left text-sm-right">
-            <h4 class="title-sec text-left text-sm-right pr-0 pr-md-8">
-              Latar Belakang
-            </h4>
-            <span class="underline mr-0 mr-md-8"></span>
+          <v-col cols="12" sm="3" md="4" class="text-left">
+            <h4 class="title-sec text-left">Latar Belakang</h4>
+            <span class="underline mb-0"></span>
           </v-col>
-          <v-col cols="12" sm="9" md="8" class="">
+        </v-row>
+        <v-row>
+          <v-col cols="12" sm="4" md="4">
             <v-card class="py-8 px-6" elevation="0">
+              <div class="text-center">
+                <img src="/tools.png" alt="" class="mb-3" />
+              </div>
               <p>
                 Para pengusaha muda baik early stage (pemula), maupun mature
                 stage perlu starter kit, panduan dan tools yang menguatkan untuk
                 terus bertumbuh
               </p>
-
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-card class="py-8 px-6" elevation="0">
+              <div class="text-center">
+                <img src="/smart-city.png" alt="" class="mb-3" />
+              </div>
               <p>
                 Para pengusaha muda perlu mengetahui cara bertansformasi menjadi
                 pengusaha yang inovasi dan karyanya menjadi dampak yang
                 menghasilkan.
               </p>
-
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-card class="py-8 px-6" elevation="0">
+              <div class="text-center">
+                <img src="/diversification.png" alt="" class="mb-3" />
+              </div>
               <p>
                 Para pengusaha muda perlu mengetahui cara mengelola krisis dari
                 sisi pengusaha lain, agar memiliki keyakinan untuk tetap
                 bertahan sebagai pengusaha yang bermanfaat hingga mendapat
                 solusi dari krisisnya.
               </p>
-
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-card class="py-8 px-6" elevation="0">
+              <div class="text-center">
+                <img src="/architect.png" alt="" class="mb-3" />
+              </div>
               <p>
                 Para pengusaha muda perlu memahami bagaimana cara membangun
                 bisnis, dari sisi positif maupun dari sisi negative yang menjadi
                 jalan untuk terus menguatkan diri dalam membangun bisnis.
               </p>
-
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4" md="4">
+            <v-card class="py-8 px-6" elevation="0">
+              <div class="text-center">
+                <img src="/cycle.png" alt="" class="mb-3" />
+              </div>
               <p>
                 Para pengusaha muda perlu memahami bagaimana cara melanjutkan
                 family business agar tetap bertahan dan terus bertumbuh dari
