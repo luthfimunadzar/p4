@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="hero" style="background-image: url('/hero.jpg')">
+      <img src="/logo.png" alt="" class="logo" />
       <div class="wrap">
         <h5>{{ new Date().getFullYear() }}</h5>
         <h2>Pengusaha Pejuang,<br />Pejuang Pengusaha</h2>

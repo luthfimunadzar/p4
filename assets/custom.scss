@@ -7,17 +7,15 @@ body,
 .hero {
   min-height: 600px;
   background-size: cover;
-  background-position: top -400px center;
+  background-position: top center;
   position: relative;
   display: flex;
   align-items: center;
   @media screen and (max-width: 959px) {
     min-height: 400px;
-    background-position: top -300px center;
   }
   @media screen and (max-width: 599px) {
     min-height: 350px;
-    background-position: top -100px center;
   }
   &::before {
     content: '';
@@ -29,12 +27,37 @@ body,
     bottom: 0;
     background-color: rgba($color: #161d2d, $alpha: 0.8);
   }
+  .logo {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 50px;
+    height: 300px;
+    transform: translateY(-50%);
+    @media screen and (max-width: 959px) {
+      height: 150px;
+      right: 30px;
+    }
+    @media screen and (max-width: 599px) {
+      right: auto;
+      left: 15px;
+      transform: translateY(0%);
+      top: 15px;
+      height: 100px;
+    }
+  }
   .wrap {
     position: relative;
     z-index: 2;
     padding: 0 60px;
-    @media screen and (max-width: 599px) {
+    width: 70%;
+    @media screen and (max-width: 959px) {
       padding: 0 30px;
+      width: 75%;
+    }
+    @media screen and (max-width: 599px) {
+      padding: 100px 15px 0 15px;
+      width: 100%;
     }
     h5 {
       color: #ed9e52;
@@ -54,10 +77,10 @@ body,
       font-size: 64px;
       line-height: normal;
       @media screen and (max-width: 959px) {
-        font-size: 48px;
+        font-size: 36px;
       }
       @media screen and (max-width: 599px) {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
     h6 {
@@ -68,9 +91,6 @@ body,
       font-weight: 300;
       margin-bottom: 0;
       @media screen and (max-width: 959px) {
-        font-size: 20px;
-      }
-      @media screen and (max-width: 599px) {
         font-size: 18px;
       }
     }
@@ -207,6 +227,12 @@ body,
     background-size: contain;
     background-image: url('/quotes.png');
     transform: rotate(180deg);
+    @media screen and (max-width: 599px) {
+      width: 312px;
+      height: 312px;
+      top: 0;
+      left: -100px;
+    }
   }
   .v-card {
     position: relative;
