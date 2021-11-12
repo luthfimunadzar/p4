@@ -67,7 +67,7 @@
         </v-row>
       </v-container>
     </div>
-    <div class="tujuan">
+    <div class="tujuan d-none">
       <v-container>
         <v-row>
           <v-col cols="12" class="text-center">

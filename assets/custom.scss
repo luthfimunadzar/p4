@@ -256,12 +256,12 @@ body,
 
 .latar {
   padding: 60px 0;
-  background-color: #d1d3d4;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
   .v-card {
     height: 100%;
+    border: 1px solid #d1d3d4 !important;
     @media screen and (max-width: 599px) {
       height: auto;
     }
@@ -358,6 +358,7 @@ body,
 
 .collab {
   padding: 60px 0;
+  background-color: #d1d3d4;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
@@ -378,7 +379,6 @@ body,
 
 .contact {
   padding: 60px 0;
-  background-color: #d1d3d4;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
