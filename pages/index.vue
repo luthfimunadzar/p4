@@ -11,6 +11,9 @@
         </h6>
       </div>
     </div>
+    <div class="showcase">
+      <img src="/depan.png" alt="" />
+    </div>
     <div class="narasumber">
       <v-container>
         <v-row>
@@ -230,13 +233,13 @@
               <form id="contactForm" @submit.prevent="submit">
                 <validation-provider
                   v-slot="{ errors }"
-                  name="Nama"
+                  name="Name"
                   rules="required"
                 >
                   <v-text-field
                     v-model="form.name"
                     :error-messages="errors"
-                    label="Nama"
+                    label="Name"
                     name="name"
                     required
                   ></v-text-field>
@@ -263,7 +266,7 @@
                   <v-text-field
                     v-model="form.email"
                     :error-messages="errors"
-                    label="E-mail"
+                    label="Email"
                     name="email"
                     required
                   ></v-text-field>
@@ -323,6 +326,7 @@
           </v-col>
         </v-row>
       </v-container>
+      <img src="/footer-bg.png" alt="" class="footer-bg" />
     </div>
   </div>
 </template>
