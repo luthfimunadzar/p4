@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'Recoleta DEMO';
+  src: url('Recoleta-RegularDEMO.woff2') format('woff2'),
+    url('Recoleta-RegularDEMO.woff') format('woff'),
+    url('Recoleta-RegularDEMO.ttf') format('truetype'),
+    url('Recoleta-RegularDEMO.svg#Recoleta-RegularDEMO') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body,
 .v-application {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .hero {
@@ -90,6 +101,7 @@ body,
       margin-top: 10px;
       font-weight: 300;
       margin-bottom: 0;
+      font-family: 'Recoleta DEMO', sans-serif;
       @media screen and (max-width: 959px) {
         font-size: 18px;
       }
@@ -145,32 +157,54 @@ body,
   padding: 60px 0;
   position: relative;
   overflow: hidden;
+  background-image: url('/white-crinkled-paper-texture.jpg');
+  background-size: cover;
   @media screen and (max-width: 959px) {
     padding: 30px 0;
   }
-  &::before {
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 1;
+  //   top: -150px;
+  //   left: -100px;
+  //   display: block;
+  //   background-color: #ebebed;
+  //   width: 500px;
+  //   height: 500px;
+  //   border-radius: 50%;
+  //   display: none;
+  // }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 1;
+  //   bottom: -150px;
+  //   right: -100px;
+  //   display: block;
+  //   background-color: #ebebed;
+  //   width: 500px;
+  //   height: 500px;
+  //   border-radius: 50%;
+  //   display: none;
+  // }
+  &:before {
     content: '';
     position: absolute;
+    bottom: 0;
     z-index: 1;
-    top: -150px;
-    left: -100px;
     display: block;
-    background-color: #ebebed;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: -150px;
-    right: -100px;
-    display: block;
-    background-color: #ebebed;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 412px;
+    height: 412px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/quotes.png');
+    transform: rotate(180deg);
+    @media screen and (max-width: 599px) {
+      width: 312px;
+      height: 312px;
+      left: -100px;
+    }
   }
   .item-narasumber {
     margin-bottom: 15px;
@@ -180,7 +214,7 @@ body,
       margin-bottom: 0px;
     }
     h5 {
-      color: #2a4597;
+      color: #161d2d;
       font-size: 20px;
       margin-top: 10px;
       font-weight: 700;
@@ -191,6 +225,7 @@ body,
     h6 {
       font-size: 14px;
       font-weight: normal;
+      font-family: 'Recoleta DEMO', sans-serif;
       @media screen and (max-width: 959px) {
         font-size: 13px;
       }
@@ -198,14 +233,40 @@ body,
   }
   &.gray {
     background-color: #d1d3d4;
-    &::before {
-      left: -200px;
-      top: 250px;
+    &:before {
+      right: 0;
+      @media screen and (max-width: 599px) {
+        right: -100px;
+        left: auto;
+      }
     }
     &:after {
-      bottom: 150px;
-      right: -200px;
+      content: '';
+      left: 0;
+      top: 0;
+      background-image: url('/hand.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      z-index: 1;
+      @media screen and (max-width: 599px) {
+        width: 300px;
+        height: 300px;
+        left: -50px;
+        top: 50px;
+      }
     }
+    // &::before {
+    //   left: -200px;
+    //   top: 250px;
+    // }
+    // &:after {
+    //   bottom: 150px;
+    //   right: -200px;
+    // }
   }
 }
 

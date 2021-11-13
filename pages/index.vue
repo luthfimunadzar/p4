@@ -3,11 +3,11 @@
     <div class="hero" style="background-image: url('/hero.jpg')">
       <img src="/logo.png" alt="" class="logo" />
       <div class="wrap">
-        <h5>{{ new Date().getFullYear() }}</h5>
+        <!-- <h5>{{ new Date().getFullYear() }}</h5> -->
         <h2>Pengusaha Pejuang,<br />Pejuang Pengusaha</h2>
         <h6>
-          A Lexicon of Entrepreneurial Stories, Curated by HIPMI Jaya x Manual
-          Jakarta
+          A Lexicon of Entrepreneurial Stories<br />Curated by HIPMI Jaya x
+          Manual Jakarta
         </h6>
       </div>
     </div>
@@ -210,7 +210,7 @@
       <v-container>
         <v-row>
           <v-col class="text-center">
-            <h4 class="title-sec pr-8">Collaboration Partner</h4>
+            <h4 class="title-sec pr-8">Collaboration Partners</h4>
             <span class="underline mr-8"></span>
           </v-col>
           <v-col cols="12" class="text-center">
@@ -473,14 +473,14 @@ export default {
   },
   head() {
     return {
-      title: 'Pengusaha Pejuang Pejuang Pengusaha',
+      title: 'Pengusaha Pejuang, Pejuang Pengusaha',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'description',
           name: 'description',
           content:
-            'Tips Praktis untuk Pengusaha Baru dalam Memasuki Industri dengan Efektif',
+            'A Lexicon of Entrepreneurial Stories Curated by HIPMI Jaya x Manual Jakarta',
         },
         {
           hid: 'og:title',
@@ -497,7 +497,7 @@ export default {
           hid: 'og:description',
           name: 'og:description',
           content:
-            'Tips Praktis untuk Pengusaha Baru dalam Memasuki Industri dengan Efektif',
+            'A Lexicon of Entrepreneurial Stories Curated by HIPMI Jaya x Manual Jakarta',
         },
       ],
     }
