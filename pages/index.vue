@@ -441,13 +441,13 @@ export default {
         {
           id: 3,
           img: '/sekapur3.jpeg',
-          nama: 'Bahlil Lahdalia',
+          nama: 'Bahlila Lahadalia',
           title: 'on "Ease of doing Business in Indonesia"',
         },
         {
           id: 4,
           img: '/sekapur4.jpeg',
-          nama: 'Erick Tohir',
+          nama: 'Erick Thohir',
           title: 'on "How UMKM and BUMN Collaborate in Indonesia"',
         },
         {
@@ -465,7 +465,7 @@ export default {
         {
           id: 7,
           img: '/sekapur7.jpeg',
-          nama: 'Mardani Maming',
+          nama: 'Mardani H. Maming',
           title: 'on "Pengusaha Muda Indonesia"',
         },
       ],
