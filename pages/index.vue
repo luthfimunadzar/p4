@@ -116,16 +116,16 @@
             <span class="underline mb-0"></span>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row class="justify-center">
           <v-col cols="12" sm="4" md="4">
             <v-card class="py-8 px-6" elevation="0">
               <div class="text-center">
                 <img src="/tools.png" alt="" class="mb-3" />
               </div>
               <p>
-                Para pengusaha muda baik early stage (pemula), maupun mature
-                stage perlu starter kit, panduan dan tools yang menguatkan untuk
-                terus bertumbuh
+                Young entrepreneurs in the early stage and even the mature
+                stage, need a <b>starter kit</b>, <b>guides</b> and
+                <b>tools</b> that strengthen them to continue growing
               </p>
             </v-card>
           </v-col>
@@ -135,9 +135,9 @@
                 <img src="/smart-city.png" alt="" class="mb-3" />
               </div>
               <p>
-                Para pengusaha muda perlu mengetahui cara bertansformasi menjadi
-                pengusaha yang inovasi dan karyanya menjadi dampak yang
-                menghasilkan.
+                Young entrepreneurs need to acknowledge how to transform into
+                entrepreneurs whose <b>innovations</b> and work
+                <b>make a lasting impact</b>.
               </p>
             </v-card>
           </v-col>
@@ -147,10 +147,11 @@
                 <img src="/diversification.png" alt="" class="mb-3" />
               </div>
               <p>
-                Para pengusaha muda perlu mengetahui cara mengelola krisis dari
-                sisi pengusaha lain, agar memiliki keyakinan untuk tetap
-                bertahan sebagai pengusaha yang bermanfaat hingga mendapat
-                solusi dari krisisnya.
+                Young entrepreneurs need to know
+                <b>how to manage the crisis</b>, and
+                <b>hear perspectives</b> from other fellow young entrepreneurs,
+                so that they have the confidence to remain as an
+                <b>intact, efficient, problem-solving entrepreneurs. </b>
               </p>
             </v-card>
           </v-col>
@@ -160,9 +161,13 @@
                 <img src="/architect.png" alt="" class="mb-3" />
               </div>
               <p>
-                Para pengusaha muda perlu memahami bagaimana cara membangun
-                bisnis, dari sisi positif maupun dari sisi negative yang menjadi
-                jalan untuk terus menguatkan diri dalam membangun bisnis.
+                Young entrepreneurs need to
+                <b
+                  >understand fully the riddle, the ups and downs, the hi and
+                  low</b
+                >
+                on how to build a business; a way to continue to
+                <b>strengthen their perserverance</b> in building a business.
               </p>
             </v-card>
           </v-col>
@@ -172,9 +177,10 @@
                 <img src="/cycle.png" alt="" class="mb-3" />
               </div>
               <p>
-                Para pengusaha muda perlu memahami bagaimana cara melanjutkan
-                family business agar tetap bertahan dan terus bertumbuh dari
-                sebelumnya.
+                Young entrepreneurs who owned and running the series of
+                generation of <b>family businesses</b>, need to understand how
+                to continue the business to survive, sustain, and grow even
+                further.
               </p>
             </v-card>
           </v-col>
@@ -228,7 +234,7 @@
       <v-container>
         <v-row class="align-center">
           <v-col cols="12" offset="0" sm="8" offset-sm="2" md="6" offset-md="3">
-            <h5 class="title-form">Isi form untuk pemesanan buku :</h5>
+            <h5 class="title-form">Pre-order #BukuHIPMIJaya now:</h5>
             <validation-observer ref="observer">
               <form id="contactForm" @submit.prevent="submit">
                 <validation-provider
@@ -239,21 +245,21 @@
                   <v-text-field
                     v-model="form.name"
                     :error-messages="errors"
-                    label="Name"
+                    label="Name:"
                     name="name"
                     required
                   ></v-text-field>
                 </validation-provider>
                 <validation-provider
                   v-slot="{ errors }"
-                  name="Angkatan HIPMI"
+                  name="Angkatan HIPMI Jaya"
                   rules="required"
                 >
                   <v-text-field
                     v-model="form.angkatan_hipmi"
                     :error-messages="errors"
-                    label="Angkatan HIPMI"
-                    name="Angkatan HIPMI"
+                    label="Angkatan HIPMI Jaya:"
+                    name="Angkatan HIPMI Jaya"
                     type="number"
                     required
                   ></v-text-field>
@@ -266,37 +272,51 @@
                   <v-text-field
                     v-model="form.email"
                     :error-messages="errors"
-                    label="Email"
+                    label="Email:"
                     name="email"
                     required
                   ></v-text-field>
                 </validation-provider>
                 <validation-provider
                   v-slot="{ errors }"
-                  name="Nomor Telephone"
+                  name="Phone Number"
                   rules="required"
                 >
                   <v-text-field
                     v-model="form.phone"
                     :error-messages="errors"
-                    label="Nomor Telephone"
-                    name="Nomor Telephone"
+                    label="Phone Number:"
+                    name="Phone Number"
                     required
                   ></v-text-field>
                 </validation-provider>
                 <validation-provider
                   v-slot="{ errors }"
-                  name="Jumlah Eksemplar"
+                  name="Quantity of Books"
                   rules="required"
                 >
                   <v-text-field
                     v-model="form.jumlah_eksemplar"
                     :error-messages="errors"
-                    label="Jumlah Eksemplar yg dipesan"
+                    label="Quantity of Books You'd Like to Order:"
                     name="jumlah_eksemplar"
-                    type="number"
+                    type="Quantity of Books"
                     required
                   ></v-text-field>
+                </validation-provider>
+                <validation-provider
+                  v-slot="{ errors }"
+                  name="Message"
+                  rules="required"
+                >
+                  <v-textarea
+                    v-model="form.message"
+                    :error-messages="errors"
+                    label="Message:"
+                    name="Message"
+                    required
+                    no-resize
+                  ></v-textarea>
                 </validation-provider>
                 <v-btn
                   color="primary"
@@ -342,6 +362,7 @@ export default {
         email: null,
         phone: null,
         jumlah_eksemplar: null,
+        message: null,
       },
       narasumbers: [
         {
@@ -520,6 +541,7 @@ export default {
       sendingData.append('email', this.form.email)
       sendingData.append('angkatan_hipmi', this.form.angkatan_hipmi)
       sendingData.append('jumlah_eksemplar', this.form.jumlah_eksemplar)
+      sendingData.append('message', this.form.message)
 
       await fetch(scriptURL, { method: 'POST', body: sendingData })
         .then(
@@ -546,6 +568,7 @@ export default {
       this.form.angkatan_hipmi = null
       this.form.phone = null
       this.form.jumlah_eksemplar = null
+      this.form.message = null
       this.$refs.observer.reset()
     },
   },

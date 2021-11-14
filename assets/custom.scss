@@ -350,7 +350,7 @@ body,
     p {
       font-size: 18px;
       line-height: 1.8;
-      margin-bottom: 25px;
+      margin-bottom: 0px;
       @media screen and (max-width: 959px) {
         font-size: 16px;
         margin-bottom: 15px;
@@ -490,6 +490,22 @@ body,
 
 .v-footer {
   background-color: #c4c4c4 !important;
+  a {
+    text-decoration: none;
+    color: #161d2d;
+    transition: all 0.3s ease;
+    @media screen and (max-width: 599px) {
+      margin-bottom: 10px;
+    }
+    .v-icon {
+      vertical-align: top;
+      display: inline-block;
+    }
+    &:hover,
+    &:focus {
+      color: #2e3c70;
+    }
+  }
 }
 
 .v-avatar {

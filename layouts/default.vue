@@ -3,9 +3,18 @@
     <v-main>
       <Nuxt />
     </v-main>
-    <v-footer :absolute="!fixed" app class="justify-center py-4">
+    <v-footer
+      :absolute="!fixed"
+      app
+      class="justify-center justify-sm-space-between py-4"
+    >
+      <a href="https://www.instagram.com/hipmijaya/" target="_blank">
+        HIPMI JAYA
+        <v-icon>mdi-instagram</v-icon>
+      </a>
       <span
-        >&copy; {{ new Date().getFullYear() }} HIPMI. All Rights Reserved.
+        >&copy; {{ new Date().getFullYear() }} HIPMI Jaya x Manual Jakarta. All
+        Rights Reserved.
       </span>
     </v-footer>
   </v-app>
