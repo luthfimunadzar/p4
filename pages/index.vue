@@ -11,7 +11,7 @@
         </h6>
       </div>
     </div>
-    <div class="showcase">
+    <div class="showcase d-none">
       <img src="/depan.png" alt="" />
     </div>
     <div class="narasumber">
