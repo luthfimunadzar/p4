@@ -16,7 +16,6 @@
     "nuxt": "^2.15.7",
     "nuxt-sweetalert2": "^1.0.0",
     "vee-validate": "^3.4.7",
-    "vue-gtag": "^1.16.1",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
