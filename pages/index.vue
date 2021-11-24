@@ -250,20 +250,12 @@
                     required
                   ></v-text-field>
                 </validation-provider>
-                <validation-provider
-                  v-slot="{ errors }"
+                <v-text-field
+                  v-model="form.angkatan_hipmi"
+                  label="Angkatan HIPMI Jaya:"
                   name="Angkatan HIPMI Jaya"
-                  rules="required"
-                >
-                  <v-text-field
-                    v-model="form.angkatan_hipmi"
-                    :error-messages="errors"
-                    label="Angkatan HIPMI Jaya:"
-                    name="Angkatan HIPMI Jaya"
-                    type="number"
-                    required
-                  ></v-text-field>
-                </validation-provider>
+                  type="number"
+                ></v-text-field>
                 <validation-provider
                   v-slot="{ errors }"
                   name="Email"
