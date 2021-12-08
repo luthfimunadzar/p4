@@ -409,7 +409,8 @@ export default {
           id: 11,
           img: '/narasumber9.jpeg',
           nama: 'Shinta Melodi',
-          title: 'INTMO by YIG ltd.co - Trade / Export & Import',
+          title:
+            'INTMO by YIG, Ltd.Co Interior & Furnitures / Trade Export Import',
         },
         {
           id: 12,
