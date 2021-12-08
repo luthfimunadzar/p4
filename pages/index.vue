@@ -442,6 +442,12 @@ export default {
           nama: 'Melissa Hamid',
           title: 'Abumas Group & Picknick Yuk Nona Manis - Industrial & Retail',
         },
+        {
+          id: 15,
+          img: '/narasumber15.jpg',
+          nama: 'Depa Al Syahid',
+          title: 'Speed Lab Indonesia - Health',
+        },
       ],
       sekapurs: [
         {
